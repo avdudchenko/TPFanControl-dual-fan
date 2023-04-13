@@ -97,6 +97,7 @@ class FANCONTROL
 		int IndSmartLevel;
 		int SensorOffset[16];
 		double SensorMultiplier[16];
+		double FSensorMultiplier[16];
 		int FSensorOffset[16];
 		int iFarbeIconB;
 		int iFontIconB;
