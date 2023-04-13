@@ -414,7 +414,55 @@ FANCONTROL::ReadConfig(const char *configfile)
 			else
 			if (_strnicmp(buf, "SensorOffset16=", 15)==0)
 					this->SensorOffset[15]= atoi(buf+15);
-
+		// Read SensorMultiplier
+			else
+			if (_strnicmp(buf, "SensorMultiplier1=", 18)==0)
+					this->SensorMultiplier[0]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier2=", 18)==0) 
+					this->SensorMultiplier[1]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier3=", 18)==0)
+					this->SensorMultiplier[2]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier4=", 18)==0) 
+					this->SensorMultiplier[3]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier5=", 18)==0)
+					this->SensorMultiplier[4]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier6=", 18)==0)
+					this->SensorMultiplier[5]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier7=", 18)==0)
+					this->SensorMultiplier[6]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier8=", 18)==0)
+					this->SensorMultiplier[7]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier9=", 18)==0)
+					this->SensorMultiplier[8]= atof(buf+18);
+			else
+			if (_strnicmp(buf, "SensorMultiplier10=", 19)==0)
+					this->SensorMultiplier[9]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier11=", 19)==0)
+					this->SensorMultiplier[10]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier12=", 19)==0)
+					this->SensorMultiplier[11]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier13=", 19)==0)
+					this->SensorMultiplier[12]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier14=", 19)==0)
+					this->SensorMultiplier[13]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier15=", 19)==0)
+					this->SensorMultiplier[14]= atof(buf+19);
+			else
+			if (_strnicmp(buf, "SensorMultiplier16=", 19)==0)
+					this->SensorMultiplier[15]= atof(buf+19);
 		// End of Reading Sensor Offsets
 
 			else
